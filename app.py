@@ -6,9 +6,28 @@ import io
 
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return "API de boceto funcionando 🖼️"
+@aplicación.ruta('/')
+definición hogar():
+    devolver [
+        {
+            "id": 1,
+            "imagen": "https://ejemplo.com/imagen1.jpg",
+            "url_boceto": "https://ejemplo.com/boceto1",
+            "fecha": "2025-07-24",
+            "alto": 30,
+            "ancho": 20,
+            "notas": "Ejemplo de boceto"
+        },
+        {
+            "id": 2,
+            "imagen": "https://ejemplo.com/imagen2.jpg",
+            "url_boceto": "https://ejemplo.com/boceto2",
+            "fecha": "2025-07-24",
+            "alto": 25,
+            "ancho": 18,
+            "notas": "Otro ejemplo"
+        }
+    ]
 
 @app.route('/sketch', methods=['POST'])
 def sketch():
