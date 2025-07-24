@@ -28,7 +28,7 @@ definición hogar():
             "notas": "Otro ejemplo"
         }
     ]
-
+ Corrijo ruta raíz para retornar JSON válido
 @app.route('/sketch', methods=['POST'])
 def sketch():
     image_url = request.json.get("image_url")
